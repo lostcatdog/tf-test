@@ -3,6 +3,6 @@ data "external" "example" {
 }
 
 output "aws_secret_access_key" {
-  value = nonsensitive(env("AWS_SECRET_ACCESS_KEY"))
+  value = nonsensitive(var.TF_VAR_aws_secret_access_key)
 }
 
